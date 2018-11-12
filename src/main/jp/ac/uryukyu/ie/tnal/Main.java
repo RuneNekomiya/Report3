@@ -5,10 +5,10 @@ package jp.ac.uryukyu.ie.tnal;
  */
 public class Main {
     public static void main(String[] args){
-        Hero hero = new Hero("勇者", 10, 5);
+        Hero hero = new Hero("田中 大輔", 10, 5);//勇者勇者は道半ばで力尽きたという謎テキストを見たのでまともな名前に変えました。
         Enemy enemy = new Enemy("スライム", 6, 3);
 
-        System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
+        System.out.printf("勇者%s vs. %s\n", hero.getName(), enemy.getName());
 
         int turn = 0;
         while( !hero.isDead() && !enemy.isDead() ){
